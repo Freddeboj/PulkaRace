@@ -8,4 +8,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Nappin/PhysicsBasedCharacterController/Scenes/TestHill1.unity
     guid: bd1b7b912845e2948aabd5a7e2b98ef4
-  m_configObjects: {}
+  m_configObjects:
+    io.coherence.simulator.build.options: {fileID: 11400000, guid: 4ac4a417f9aba4944bb4681a4454f973, type: 2}
