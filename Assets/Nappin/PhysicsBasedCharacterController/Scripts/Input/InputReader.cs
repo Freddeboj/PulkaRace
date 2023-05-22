@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 //DISABLE if using old input system
 using UnityEngine.InputSystem;
-
 
 namespace PhysicsBasedCharacterController
 {
