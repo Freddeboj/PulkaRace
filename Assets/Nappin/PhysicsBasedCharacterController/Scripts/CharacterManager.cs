@@ -155,6 +155,9 @@ namespace PhysicsBasedCharacterController
         [SerializeField] UnityEvent OnCrouch;
         [Space(15)]
 
+        [SerializeField] UnityEvent OnTurn;
+        [Space(15)]
+
 
 
         private Vector3 forward;
@@ -585,6 +588,10 @@ namespace PhysicsBasedCharacterController
             if (isTouchingWall && rigidbody.velocity.y < 0) OnWallSlide.Invoke();
             if (sprint) OnSprint.Invoke();
             if (isCrouch) OnCrouch.Invoke();
+            if (Mathf.Abs(axisInput.x) > movementThrashold)
+            {
+                OnTurn.Invoke(); // Invoke OnTurn event if horizontal input is above the threshold
+            }
         }
 
         #endregion
